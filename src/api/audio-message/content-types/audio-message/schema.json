@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "audio_messages",
+  "info": {
+    "singularName": "audio-message",
+    "pluralName": "audio-messages",
+    "displayName": "Audio Message"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "date": {
+      "type": "date"
+    },
+    "author": {
+      "type": "string",
+      "required": true
+    },
+    "itemAudio": {
+      "allowedTypes": [
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "alternativeLink": {
+      "type": "string"
+    }
+  }
+}

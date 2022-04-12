@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sen_pastors",
+  "info": {
+    "singularName": "sen-pastor",
+    "pluralName": "sen-pastors",
+    "displayName": "senPastor"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "senPastorItem": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "contact": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

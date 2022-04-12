@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bulletins",
+  "info": {
+    "singularName": "bulletin",
+    "pluralName": "bulletins",
+    "displayName": "bulletin",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "bulletinArticle": {
+      "type": "richtext",
+      "required": true
+    },
+    "date": {
+      "type": "date"
+    },
+    "bulletinLinkImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Slug": {
+      "type": "uid",
+      "targetField": "title"
+    }
+  }
+}

@@ -22,7 +22,7 @@ module.exports = ({ env }) => ({
       },
       actionOptions: {
         upload: {
-          folder: "ipakodo",
+          folder: env('CLOUDINARY_FOLDER'),
         },
         delete: {},
       },
